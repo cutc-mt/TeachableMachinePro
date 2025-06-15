@@ -27,17 +27,61 @@ GoogleのTeachable Machineクローンをベースにした、UI/UXを大幅に�
 - **チャート**: Recharts
 - **ルーティング**: Wouter
 
-## インストールと実行
+## セットアップと実行手順
+
+### 📥 リポジトリのクローン
 
 ```bash
-# 依存関係のインストール
+# リポジトリをクローン
+git clone https://github.com/cutc-mt/TeachableMachinePro.git
+
+# プロジェクトディレクトリに移動
+cd TeachableMachinePro
+```
+
+### 📦 依存関係のインストール
+
+```bash
+# Node.js依存関係をインストール
 npm install
+```
 
-# 開発サーバー起動
+### 🚀 開発サーバーの起動
+
+```bash
+# 開発サーバーを起動（ポート5000）
 npm run dev
+```
 
-# プロダクションビルド
+開発サーバーが起動したら、ブラウザで `http://localhost:5000` にアクセスしてください。
+
+### 🏗️ プロダクションビルド
+
+```bash
+# プロダクション用にビルド
 npm run build
+
+# プロダクションサーバーを起動
+npm run start
+```
+
+### ⚡ 必要環境
+
+- **Node.js**: 18.0以上
+- **npm**: 8.0以上
+- **ブラウザ**: Chrome、Firefox、Safari（WebカメラとWebGL対応）
+
+### 🔧 トラブルシューティング
+
+**カメラが動作しない場合:**
+- ブラウザでカメラ許可を確認
+- HTTPSまたはlocalhostで実行していることを確認
+
+**依存関係エラーの場合:**
+```bash
+# node_modulesを削除して再インストール
+rm -rf node_modules package-lock.json
+npm install
 ```
 
 ## 使用方法
