@@ -84,6 +84,11 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
+**Windows環境での注意点:**
+- `cross-env`パッケージが自動インストールされてクロスプラットフォーム対応済み
+- PowerShellまたはコマンドプロンプトで実行可能
+- Gitはデフォルトでインストールされている必要があります
+
 ## 使用方法
 
 1. **クラス作成**: 分類したいカテゴリを設定
